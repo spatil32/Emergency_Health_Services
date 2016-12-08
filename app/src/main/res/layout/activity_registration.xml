@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#ffBE80FF"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.spatil32.emergency_health_services.RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/applicationImage"
+            android:src="@drawable/application"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration Form"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblFormName"
+            android:textSize="40dp"
+            android:layout_below="@+id/applicationImage"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtHospitalName"
+            android:hint="Hospital Name"
+            android:textSize="30dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/lblFormName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hospital Address"
+            android:fontFamily="cursive"
+            android:id="@+id/txtHospitalAddress"
+            android:textSize="30dp"
+            android:layout_below="@id/txtHospitalName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDoctorName"
+            android:hint="Doctor Name"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/txtHospitalAddress"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSSN"
+            android:textSize="30dp"
+            android:hint="SSN"
+            android:fontFamily="cursive"
+            android:layout_below="@id/txtDoctorName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEmail"
+            android:textSize="30dp"
+            android:hint="Email"
+            android:fontFamily="cursive"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/txtSSN"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPassword"
+            android:textSize="30dp"
+            android:hint="Password"
+            android:fontFamily="cursive"
+            android:inputType="textPassword"
+            android:layout_below="@id/txtEmail"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtConfirmPassword"
+            android:textSize="30dp"
+            android:hint="Confirm Password"
+            android:fontFamily="cursive"
+            android:inputType="textPassword"
+            android:layout_below="@id/txtPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtContact"
+            android:fontFamily="cursive"
+            android:textSize="30dp"
+            android:inputType="text|phone"
+            android:hint="Phone"
+            android:layout_below="@id/txtConfirmPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/btnRegister"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"
+            android:layout_below="@id/txtContact"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/buttons"
+            android:enabled="true"
+            android:clickable="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#ffff"
+            android:id="@+id/btnCancel"
+            android:layout_below="@id/txtContact"
+            android:layout_toRightOf="@id/btnRegister"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttons"
+            android:enabled="true"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency Health Services"
+            android:textStyle="italic"
+            android:layout_below="@id/btnCancel"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ff0000"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+</ScrollView>

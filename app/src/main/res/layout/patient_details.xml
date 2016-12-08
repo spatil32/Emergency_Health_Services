@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#ffBE80FF"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.spatil32.emergency_health_services.PatientDetails">
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/applicationImage"
+            android:src="@drawable/application"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient Details"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblFormName"
+            android:textSize="40dp"
+            android:layout_below="@+id/applicationImage"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblFirstName"
+            android:hint="Patient First Name : "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/lblFormName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptFirstName"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:layout_below="@id/lblFormName"
+            android:textColor="#ff0000"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/lblFirstName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblLastName"
+            android:hint="Patient Last Name : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/lblFirstName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptLastName"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:layout_below="@id/lblFirstName"
+            android:layout_toRightOf="@id/lblLastName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblSSN"
+            android:hint="SSN : "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/lblLastName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptSSN"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/lblLastName"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_toRightOf="@id/lblSSN"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblEmail"
+            android:hint="Email : "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/lblSSN"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptEmail"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/lblSSN"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_toRightOf="@id/lblEmail"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblPhone"
+            android:hint="Phone : "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/lblEmail"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptPhone"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ff0000"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/lblEmail"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_toRightOf="@id/lblPhone"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblEmergency"
+            android:hint="Emergency Contact : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/lblPhone"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptEmergency"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/lblPhone"
+            android:fontFamily="cursive"
+            android:layout_toRightOf="@id/lblEmergency"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblPassword"
+            android:hint="Password : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/lblEmergency"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptPassword"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/lblEmergency"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_toRightOf="@id/lblPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ptPassword"
+            android:layout_marginTop="25dp"
+            android:text="LogOut"
+            android:textStyle="bold"
+            android:id="@+id/ptBtnLogout"
+            android:background="@drawable/buttons"/>
+        </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#ffBE80FF"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.spatil32.emergency_health_services.PatientRegistrationActivity">
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/applicationImage"
+            android:src="@drawable/application"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration Form"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblFormName"
+            android:textSize="40dp"
+            android:layout_below="@+id/applicationImage"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evFirstName"
+            android:hint="Patient First Name"
+            android:textSize="30dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/lblFormName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patient Last Name"
+            android:fontFamily="cursive"
+            android:id="@+id/evLastName"
+            android:textSize="30dp"
+            android:layout_below="@id/evFirstName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evSSN"
+            android:hint="Social Security Number"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
+            android:layout_below="@id/evLastName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evEmail"
+            android:textSize="30dp"
+            android:hint="Patient email id"
+            android:inputType="textEmailAddress"
+            android:fontFamily="cursive"
+            android:layout_below="@id/evSSN"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evContact"
+            android:textSize="30dp"
+            android:hint="Phone Number"
+            android:fontFamily="cursive"
+            android:inputType="text|phone"
+            android:layout_below="@id/evEmail"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evEmgContact"
+            android:fontFamily="cursive"
+            android:textSize="30dp"
+            android:inputType="text|phone"
+            android:hint="Emergency Contact"
+            android:layout_below="@id/evContact"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evPassword"
+            android:textSize="30dp"
+            android:hint="Password"
+            android:fontFamily="cursive"
+            android:inputType="textPassword"
+            android:layout_below="@id/evEmgContact"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evConfirmPassword"
+            android:textSize="30dp"
+            android:hint="Confirm Password"
+            android:fontFamily="cursive"
+            android:inputType="textPassword"
+            android:layout_below="@id/evPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/bRegister"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"
+            android:layout_below="@id/evConfirmPassword"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/buttons"
+            android:enabled="true"
+            android:clickable="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#ffff"
+            android:id="@+id/bCancel"
+            android:layout_below="@id/evConfirmPassword"
+            android:layout_toRightOf="@id/bRegister"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttons"
+            android:enabled="true"
+            android:clickable="true" />
+    </RelativeLayout>
+</ScrollView>
